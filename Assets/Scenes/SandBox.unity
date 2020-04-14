@@ -245,6 +245,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1251508439}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &139008894 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9016502195704670144, guid: 711452afc4693c74ab029cdfd3a0bfb3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3771508133715522025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &159853373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2291,6 +2297,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 237806947}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1767120571 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3771508133727131890, guid: 711452afc4693c74ab029cdfd3a0bfb3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3771508133715522025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1796045325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5,
@@ -2878,6 +2890,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1247298586, guid: 711452afc4693c74ab029cdfd3a0bfb3, type: 3}
+      propertyPath: muzzleFlashVFX
+      value: 
+      objectReference: {fileID: 139008894}
+    - target: {fileID: 1247298586, guid: 711452afc4693c74ab029cdfd3a0bfb3, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 1767120571}
     - target: {fileID: 3771508133727460052, guid: 711452afc4693c74ab029cdfd3a0bfb3,
         type: 3}
       propertyPath: m_Name

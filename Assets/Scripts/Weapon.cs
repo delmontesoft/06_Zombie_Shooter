@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] Camera FPcamera;
+    [SerializeField] Camera FPCamera;
+    [SerializeField] ParticleSystem muzzleFlashVFX;
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
 
@@ -20,9 +22,20 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
+        PlayMuzzleFlash();
+        ProcessRayCast();
+    }
+
+    private void PlayMuzzleFlash()
+    {
+        muzzleFlashVFX.Play();
+    }
+
+    private void ProcessRayCast()
+    {
         RaycastHit hit;
 
-        if (Physics.Raycast(FPcamera.transform.position, FPcamera.transform.forward, out hit, weaponRange))
+        if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, weaponRange))
         {
             //TODO add some hit effect
 
