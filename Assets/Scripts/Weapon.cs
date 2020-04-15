@@ -2,12 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] ParticleSystem muzzleFlashVFX;
+    [SerializeField] GameObject bulletHitVFXPrefab;
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
 
@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
 
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, weaponRange))
         {
-            //TODO add some hit effect
+            PlayBulletHitFX(hit);
 
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             if (!target) return;
@@ -47,5 +47,11 @@ public class Weapon : MonoBehaviour
         {
             return;
         }
+    }
+
+    private void PlayBulletHitFX(RaycastHit hit)
+    {
+        GameObject hitFXInstance = Instantiate(bulletHitVFXPrefab, hit.point, Quaternion.LookRotation(hit.normal), transform);
+        Destroy(hitFXInstance, 0.1f);
     }
 }

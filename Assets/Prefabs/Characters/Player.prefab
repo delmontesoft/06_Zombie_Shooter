@@ -46,7 +46,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -344,8 +344,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76265e508a1e49a41acae6eee76efe72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPcamera: {fileID: 3771508133727131890}
-  range: 100
+  FPCamera: {fileID: 3771508133727131890}
+  muzzleFlashVFX: {fileID: 9016502195704670144}
+  weaponRange: 100
+  weaponDamage: 1
 --- !u!1001 &5571037269218579761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,6 +446,12 @@ GameObject:
 --- !u!4 &7871931996358709911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 5571037269218579761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9016502195704670144 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3490641660390273777, guid: ada2587319194f542957a8c2ae277cb9,
     type: 3}
   m_PrefabInstance: {fileID: 5571037269218579761}
   m_PrefabAsset: {fileID: 0}
