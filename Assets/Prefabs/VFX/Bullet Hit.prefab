@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737572898201201509}
-  - component: {fileID: 737572898207105709}
   - component: {fileID: 737572898207105711}
   - component: {fileID: 737572898207578735}
   m_Layer: 0
@@ -34,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737572898207105709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737572898201106245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac1691131a8c844dafe8b6ace6a172a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionForce: 20
 --- !u!114 &737572898207105711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +222,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 0.05
       minScalar: 0.01
       maxCurve:
         serializedVersion: 2
@@ -271,7 +257,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
