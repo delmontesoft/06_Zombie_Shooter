@@ -10,6 +10,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 10f;
 
     NavMeshAgent navMeshAgent;
+    Animator enemyAnimator;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
 
@@ -17,6 +18,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        enemyAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -48,12 +50,15 @@ public class EnemyAI : MonoBehaviour
 
     private void ChaseTarget()
     {
+        enemyAnimator.SetBool("attack", false);
+        enemyAnimator.SetTrigger("move");
+
         navMeshAgent.SetDestination(target.position);
     }
 
     private void AttackTarget()
     {
-        print("Raaarr! Te estoy atacando!");
+        enemyAnimator.SetBool("attack", true);
     }
 
     void OnDrawGizmosSelected()

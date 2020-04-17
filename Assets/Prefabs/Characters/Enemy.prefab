@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ad6b474c8b9899a439a7040a78ade697, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,7 +121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4081206162050940979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 0.3, z: 0.5}
+  m_LocalPosition: {x: 0.2, y: 0.3, z: 0.43}
   m_LocalScale: {x: 0.21562, y: 0.21562, z: 0.21562}
   m_Children: []
   m_Father: {fileID: 8180037624527402081}
@@ -246,7 +246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ad6b474c8b9899a439a7040a78ade697, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -370,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7247722870283881054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 0.3, z: 0.5}
+  m_LocalPosition: {x: -0.2, y: 0.3, z: 0.43}
   m_LocalScale: {x: 0.21562, y: 0.21562, z: 0.21562}
   m_Children: []
   m_Father: {fileID: 8180037624527402081}
@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 8180037624527402085}
   - component: {fileID: 8180037624527402086}
   - component: {fileID: 4587454513124789760}
+  - component: {fileID: 3650350478631982359}
   - component: {fileID: 7949595262532319898}
   m_Layer: 0
   m_Name: Enemy
@@ -503,7 +504,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ad6b474c8b9899a439a7040a78ade697, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -552,7 +553,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 2.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -586,7 +587,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2ea9b5ff820c442a08aeceb9a86528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 50
+--- !u!114 &3650350478631982359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180037624527402087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de2559991d92a24a9ceb976c3fa48e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  attackPower: 40
 --- !u!95 &7949595262532319898
 Animator:
   serializedVersion: 3
