@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] Camera FPCamera;
-    [SerializeField] ParticleSystem muzzleFlashVFX;
-    [SerializeField] GameObject bulletHitVFXPrefab;
+    [SerializeField] Camera FPCamera = null;
+    [SerializeField] ParticleSystem muzzleFlashVFX = null;
+    [SerializeField] GameObject bulletHitVFXPrefab = null;
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
 
