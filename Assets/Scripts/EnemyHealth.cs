@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (hitPoints >0)
         {
+            BroadcastMessage("OnDamageTaken");
             hitPoints = hitPoints - damageTaken;
         }
 
