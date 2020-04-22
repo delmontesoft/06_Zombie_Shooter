@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject bulletHitVFXPrefab = null;
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
+    [SerializeField] float weaponZoomRange = 30f;
 
     // Update is called once per frame
     void Update()
@@ -17,6 +18,11 @@ public class Weapon : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             Shoot();
+        }
+
+        if (Input.GetButtonDown("Zoom"))
+        {
+            ToggleZoom();
         }
     }
 
@@ -53,5 +59,10 @@ public class Weapon : MonoBehaviour
     {
         GameObject hitFXInstance = Instantiate(bulletHitVFXPrefab, hit.point, Quaternion.LookRotation(hit.normal), transform);
         Destroy(hitFXInstance, 0.1f);
+    }
+
+    private void ToggleZoom()
+    {
+        FindObjectOfType<WeaponZoom>().ToggleZoom(weaponZoomRange);
     }
 }
