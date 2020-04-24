@@ -8,14 +8,15 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera FPCamera = null;
     [SerializeField] ParticleSystem muzzleFlashVFX = null;
     [SerializeField] GameObject bulletHitVFXPrefab = null;
+    [SerializeField] Ammo ammoSlot = null;
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
-    [SerializeField] float weaponZoomRange = 30f;
+    [SerializeField] float weaponZoomRange = 40f;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
@@ -28,8 +29,12 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        PlayMuzzleFlash();
-        ProcessRayCast();
+        if (ammoSlot.GetCurrentAmmo() >0)
+        {
+            PlayMuzzleFlash();
+            ProcessRayCast();
+            ammoSlot.ReduceCurrentAmmo();
+        }
     }
 
     private void PlayMuzzleFlash()
