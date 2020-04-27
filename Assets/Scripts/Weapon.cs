@@ -12,13 +12,16 @@ public class Weapon : MonoBehaviour
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
     [SerializeField] float weaponZoomRange = 40f;
+    [SerializeField] float timeBetweenShots = 0.5f;
+
+    bool canShoot = true;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && canShoot)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
 
         if (Input.GetButtonDown("Zoom"))
@@ -27,14 +30,18 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    IEnumerator Shoot()
     {
+        canShoot = false;
         if (ammoSlot.GetCurrentAmmo() >0)
         {
             PlayMuzzleFlash();
             ProcessRayCast();
             ammoSlot.ReduceCurrentAmmo();
         }
+
+        yield return new WaitForSeconds(timeBetweenShots);
+        canShoot = true;
     }
 
     private void PlayMuzzleFlash()
