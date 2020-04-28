@@ -239,7 +239,7 @@ MonoBehaviour:
   bulletHitVFXPrefab: {fileID: 737572898201106245, guid: 85c2ffac5881f5d4ab6c3c4448dd6b34,
     type: 3}
   ammoSlot: {fileID: 0}
-  weaponRange: 25
+  weaponRange: 30
   weaponDamage: 15
   weaponZoomRange: 10
   timeBetweenShots: 0.2
