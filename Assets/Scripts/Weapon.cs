@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera FPCamera = null;
     [SerializeField] ParticleSystem muzzleFlashVFX = null;
     [SerializeField] GameObject bulletHitVFXPrefab = null;
+    [SerializeField] AmmoType ammoType = 0;
     [SerializeField] Ammo ammoSlot = null;
     [SerializeField] float weaponRange = 100f;
     [SerializeField] float weaponDamage = 1f;
@@ -16,7 +17,11 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
-    // Update is called once per frame
+    private void OnEnable()
+    {
+        canShoot = true;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1") && canShoot)
@@ -33,11 +38,11 @@ public class Weapon : MonoBehaviour
     IEnumerator Shoot()
     {
         canShoot = false;
-        if (ammoSlot.GetCurrentAmmo() >0)
+        if (ammoSlot.GetCurrentAmmo(ammoType) >0)
         {
             PlayMuzzleFlash();
             ProcessRayCast();
-            ammoSlot.ReduceCurrentAmmo();
+            ammoSlot.ReduceCurrentAmmo(ammoType);
         }
 
         yield return new WaitForSeconds(timeBetweenShots);
@@ -46,7 +51,7 @@ public class Weapon : MonoBehaviour
 
     private void PlayMuzzleFlash()
     {
-        muzzleFlashVFX.Play();
+        muzzleFlashVFX.Play();  
     }
 
     private void ProcessRayCast()
@@ -73,7 +78,7 @@ public class Weapon : MonoBehaviour
         Destroy(hitFXInstance, 0.1f);
     }
 
-    private void ToggleZoom()
+    public void ToggleZoom()
     {
         FindObjectOfType<WeaponZoom>().ToggleZoom(weaponZoomRange);
     }

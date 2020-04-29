@@ -103,6 +103,7 @@ MonoBehaviour:
   muzzleFlashVFX: {fileID: 5982289214986444717}
   bulletHitVFXPrefab: {fileID: 737572898201106245, guid: 85c2ffac5881f5d4ab6c3c4448dd6b34,
     type: 3}
+  ammoType: 2
   ammoSlot: {fileID: 0}
   weaponRange: 40
   weaponDamage: 35

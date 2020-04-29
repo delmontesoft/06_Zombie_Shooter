@@ -12,7 +12,7 @@ public class WeaponZoom : MonoBehaviour
     bool isZoomed = false;
     RigidbodyFirstPersonController fpsController = null;
 
-    private void Start()
+    private void Awake()
     {
         fpsController = GetComponent<RigidbodyFirstPersonController>();
     }
