@@ -17,7 +17,6 @@ public class EnemyHealth : MonoBehaviour
         if (hitPoints <= 0)
         {
             //TODO start enemy death sequence
-            print("Enemy killed!");
             Destroy(gameObject);
         }
         

@@ -105,7 +105,7 @@ MonoBehaviour:
     type: 3}
   ammoType: 2
   ammoSlot: {fileID: 0}
-  weaponRange: 40
+  weaponRange: 45
   weaponDamage: 35
   weaponZoomRange: 40
   timeBetweenShots: 1

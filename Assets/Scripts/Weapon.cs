@@ -16,10 +16,17 @@ public class Weapon : MonoBehaviour
     [SerializeField] float timeBetweenShots = 0.5f;
 
     bool canShoot = true;
+    bool isZoomed = false;
 
     private void OnEnable()
     {
         canShoot = true;
+    }
+
+    private void OnDisable()
+    {
+        isZoomed = false;
+        ToggleZoom();
     }
 
     void Update()
@@ -31,6 +38,7 @@ public class Weapon : MonoBehaviour
 
         if (Input.GetButtonDown("Zoom"))
         {
+            isZoomed = !isZoomed;
             ToggleZoom();
         }
     }
@@ -78,8 +86,8 @@ public class Weapon : MonoBehaviour
         Destroy(hitFXInstance, 0.1f);
     }
 
-    public void ToggleZoom()
+    private void ToggleZoom()
     {
-        FindObjectOfType<WeaponZoom>().ToggleZoom(weaponZoomRange);
+        FindObjectOfType<WeaponZoom>().ToggleZoom(isZoomed, weaponZoomRange);
     }
 }
