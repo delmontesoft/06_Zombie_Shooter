@@ -859,6 +859,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -868,6 +873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -1003,10 +1013,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -1083,6 +1103,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -1092,6 +1117,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -2474,6 +2504,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8158970432512765910, guid: 0ed429a2721a9414994d629b3b7b3771,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158970432512765910, guid: 0ed429a2721a9414994d629b3b7b3771,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed429a2721a9414994d629b3b7b3771, type: 3}
 --- !u!1001 &798754757
@@ -2756,6 +2796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -3215,7 +3260,7 @@ PrefabInstance:
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
@@ -3232,10 +3277,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -3529,7 +3584,7 @@ PrefabInstance:
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
@@ -3546,10 +3601,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -3669,7 +3734,7 @@ PrefabInstance:
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
@@ -3686,6 +3751,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -3695,6 +3765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -3772,7 +3847,7 @@ PrefabInstance:
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
@@ -3789,10 +3864,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -4025,6 +4110,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -4034,6 +4124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -4186,6 +4281,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158970432512765910, guid: 14231f3944618ae41866b63cda19d523,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158970432512765910, guid: 14231f3944618ae41866b63cda19d523,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14231f3944618ae41866b63cda19d523, type: 3}
@@ -4400,10 +4505,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -4480,6 +4595,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -4489,6 +4609,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -4687,11 +4812,11 @@ Transform:
   m_LocalPosition: {x: -4.523571, y: -10.39966, z: -10.833573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1090563244}
   - {fileID: 1126472023}
   - {fileID: 992573437}
   - {fileID: 1165675469}
   - {fileID: 1033724218}
-  - {fileID: 1090563244}
   - {fileID: 1928110045}
   - {fileID: 411008905}
   - {fileID: 1978042796}
@@ -4771,6 +4896,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -4780,6 +4910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -5145,7 +5280,7 @@ PrefabInstance:
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402081, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
@@ -5162,10 +5297,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}
@@ -5336,6 +5481,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158970432512765910, guid: 49b5ad57f97e2554eb3668e3cbaac44e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158970432512765910, guid: 49b5ad57f97e2554eb3668e3cbaac44e,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49b5ad57f97e2554eb3668e3cbaac44e, type: 3}
@@ -6249,6 +6404,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402085, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 8180037624527402086, guid: 2b370cd879d33554182c889fe1c150bd,
         type: 3}
       propertyPath: chaseRange
@@ -6258,6 +6418,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180037624527402087, guid: 2b370cd879d33554182c889fe1c150bd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b370cd879d33554182c889fe1c150bd, type: 3}

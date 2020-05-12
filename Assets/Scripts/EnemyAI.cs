@@ -10,6 +10,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 10f;
     [SerializeField] float turnSpeed = 5f;
 
+    EnemyHealth enemyHealth;
     NavMeshAgent navMeshAgent;
     Animator enemyAnimator;
     float distanceToTarget = Mathf.Infinity;
@@ -19,6 +20,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         target = FindObjectOfType<PlayerHealth>().transform;
+        enemyHealth = GetComponent<EnemyHealth>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
     }
@@ -26,6 +28,12 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (enemyHealth.IsEnemyDead())
+        {
+            navMeshAgent.enabled = false;
+            enabled = false;
+        }
+
         distanceToTarget = Vector3.Distance(target.position, transform.position);
 
         if (isProvoked)
@@ -45,7 +53,7 @@ public class EnemyAI : MonoBehaviour
 
     private void EngageTarget()
     {
-        FaceTarget();   
+        FaceTarget();
         if (distanceToTarget > navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
