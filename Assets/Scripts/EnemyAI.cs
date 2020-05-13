@@ -16,7 +16,6 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         target = FindObjectOfType<PlayerHealth>().transform;
@@ -25,7 +24,6 @@ public class EnemyAI : MonoBehaviour
         enemyAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (enemyHealth.IsEnemyDead())

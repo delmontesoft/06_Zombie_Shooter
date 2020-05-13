@@ -14,7 +14,9 @@ public class EnemyAttack : MonoBehaviour
 
     public void AttackHitEvent()
     {
-        if (!target) { return; }
+        if (!target) {
+            return;
+        }
         target.TakeDamage(attackPower);
     }
 
