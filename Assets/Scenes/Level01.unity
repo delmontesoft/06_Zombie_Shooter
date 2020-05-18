@@ -383,7 +383,7 @@ Transform:
   - {fileID: 966355949}
   - {fileID: 766250677}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!223 &1903018359 stripped
 Canvas:
@@ -706,7 +706,7 @@ PrefabInstance:
     - target: {fileID: 4290571247398794362, guid: 2f8932b1e914dea4fa5512aac98fad85,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4290571247398794362, guid: 2f8932b1e914dea4fa5512aac98fad85,
         type: 3}
