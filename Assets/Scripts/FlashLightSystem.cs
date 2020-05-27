@@ -10,10 +10,29 @@ public class FlashLightSystem : MonoBehaviour
     [SerializeField] float minimumAngle = 30f;
 
     Light myFlashlight;
+    float maximumIntensity;
 
     private void Start()
     {
         myFlashlight = GetComponent<Light>();
+        maximumIntensity = myFlashlight.intensity;
+    }
+
+    public void increaseIntensity(float intensityAmount)
+    {
+        if ((myFlashlight.intensity + intensityAmount) > maximumIntensity)
+        {
+            myFlashlight.intensity = maximumIntensity;
+        }
+        else
+        {
+            myFlashlight.intensity += intensityAmount;
+        }
+    }
+
+    public void restoreAngle(float angleAmount)
+    {
+        myFlashlight.spotAngle = angleAmount;
     }
 
     private void Update()

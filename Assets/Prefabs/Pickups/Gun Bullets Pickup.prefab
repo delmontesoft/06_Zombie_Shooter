@@ -139,7 +139,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun Bullet (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4564055310533270254, guid: 6dc5845803886ff4ca9d16a30879df7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6dc5845803886ff4ca9d16a30879df7f, type: 3}
 --- !u!4 &2955888744144601933 stripped
 Transform:
@@ -224,7 +225,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun Bullet
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4564055310533270254, guid: 6dc5845803886ff4ca9d16a30879df7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6dc5845803886ff4ca9d16a30879df7f, type: 3}
 --- !u!4 &7339096405454535709 stripped
 Transform:
@@ -309,7 +311,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gun Bullet (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4564055310533270254, guid: 6dc5845803886ff4ca9d16a30879df7f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6dc5845803886ff4ca9d16a30879df7f, type: 3}
 --- !u!4 &4772857827606110274 stripped
 Transform:

@@ -144,7 +144,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1195838157953225857, guid: 07956e6cbdd4df8438c7d7c64792deb3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 07956e6cbdd4df8438c7d7c64792deb3, type: 3}
 --- !u!4 &6410783394067682884 stripped
 Transform:
@@ -234,7 +235,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1195838157953225857, guid: 07956e6cbdd4df8438c7d7c64792deb3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 07956e6cbdd4df8438c7d7c64792deb3, type: 3}
 --- !u!4 &8303258549467546565 stripped
 Transform:
@@ -324,7 +326,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1195838157953225857, guid: 07956e6cbdd4df8438c7d7c64792deb3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 07956e6cbdd4df8438c7d7c64792deb3, type: 3}
 --- !u!4 &8876192657946793636 stripped
 Transform:
