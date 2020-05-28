@@ -6,13 +6,13 @@ using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
-    Transform target;
     [SerializeField] float chaseRange = 10f;
     [SerializeField] float turnSpeed = 5f;
 
     EnemyHealth enemyHealth;
     NavMeshAgent navMeshAgent;
     Animator enemyAnimator;
+    Transform target;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -14,6 +15,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float weaponDamage = 1f;
     [SerializeField] float weaponZoomRange = 40f;
     [SerializeField] float timeBetweenShots = 0.5f;
+    [SerializeField] TextMeshProUGUI ammoText = null;
 
     bool canShoot = true;
     bool isZoomed = false;
@@ -31,6 +33,8 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        DisplayAmmo();
+
         if (Input.GetButtonDown("Fire1") && canShoot)
         {
             StartCoroutine(Shoot());
@@ -41,6 +45,12 @@ public class Weapon : MonoBehaviour
             isZoomed = !isZoomed;
             ToggleZoom();
         }
+    }
+
+    private void DisplayAmmo()
+    {
+        int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
+        ammoText.text = "AMMO: " + currentAmmo.ToString();
     }
 
     IEnumerator Shoot()
