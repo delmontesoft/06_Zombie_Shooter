@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] float hitPoints = 100f;
     [SerializeField] TextMeshProUGUI healthText = null;
 
+
     private void Start()
     {
         healthText.text = "HEALTH: " + hitPoints.ToString();
